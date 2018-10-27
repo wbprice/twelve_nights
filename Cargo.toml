@@ -1,0 +1,6 @@
+[package]
+name = "twelve_nights"
+version = "0.1.0"
+authors = ["Blaine Price <1wbprice@gmail.com>"]
+
+[dependencies]
