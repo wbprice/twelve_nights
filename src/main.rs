@@ -16,7 +16,7 @@ fn main() {
         ["twelfth", "Twelve drummers drumming"],
     ];
 
-    for index in 0..12 {
+    for index in 0..lyrics.len() {
         let [nth, _] = lyrics[index];
         println!("On the {} day of Christmas, my true love gave to me", nth);
 
