@@ -19,18 +19,11 @@ fn main() {
     let mut index = 0;
     while index < 12 {
         let [nth, _] = lyrics[index];
-        let mut i = index;
         println!("On the {} day of Christmas, my true love gave to me", nth);
 
-        while i > 0 {
+        for i in (0..index + 1).rev() {
             let [_, gift] = lyrics[i];
-            println!("{}!", gift);
-            i = i - 1;
-        }
-        
-        if i == 0 {
-            let [_, gift] = lyrics[0];
-            println!("{}!", gift);
+            println!("{}", gift);
         }
 
         println!("\n");
