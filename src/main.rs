@@ -16,8 +16,7 @@ fn main() {
         ["twelfth", "Twelve drummers drumming"],
     ];
 
-    let mut index = 0;
-    while index < 12 {
+    for index in 0..12 {
         let [nth, _] = lyrics[index];
         println!("On the {} day of Christmas, my true love gave to me", nth);
 
@@ -27,7 +26,5 @@ fn main() {
         }
 
         println!("\n");
-
-        index = index + 1;
     }
 }
