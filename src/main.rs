@@ -21,11 +21,13 @@ fn main() {
         let [nth, _] = lyrics[index];
         let mut i = index;
         println!("On the {} day of Christmas, my true love gave to me", nth);
+
         while i > 0 {
             let [_, gift] = lyrics[i];
             println!("{}!", gift);
             i = i - 1;
         }
+
         index = index + 1;
         println!("\n");
     }
