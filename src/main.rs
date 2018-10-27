@@ -27,8 +27,14 @@ fn main() {
             println!("{}!", gift);
             i = i - 1;
         }
+        
+        if i == 0 {
+            let [_, gift] = lyrics[0];
+            println!("{}!", gift);
+        }
+
+        println!("\n");
 
         index = index + 1;
-        println!("\n");
     }
 }
